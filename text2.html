@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function msg1(){
+            document.write("hi")
+        }
+    function validate(){
+        var input=window.confirm("do u want to proceed..?")
+        if(input==true){
+            document.write("submitted...")
+        }
+        else{
+            alert("going to terminate the process...")
+        }
+        }
+    </script>
+</head>
+<body>
+    <center>
+    <h1><i> Central Student Registration </i></h1>
+    <form>
+        <table>
+            <tr><td>StudentName</td><td><input type="text" name="id" placeholder="enter the id here"></td></tr>
+            <tr><td>StudentEmail</td><td><input type="email" name="email" placeholder="a@c.c"></td></tr>
+            <tr><td>Studentpassword</td><td><input type="password" name="pwd" placeholder="use . and *"></td></tr>
+            <tr><td>StudentDoB</td><td><input type="date" name="dob"></td></tr>
+            <tr><td>Student gender</td><td><input type="radio" name="gender" value="male">Male<input type="radio" name="gender" value="female">Female </td></tr>
+            <tr><td>Student fav game</td><td><input type="checkbox" name="cricket">Cricket<input type="checkbox" name="football" >football </td></tr>
+            <tr>
+                <td>Student lst of courses</td>
+            <td>
+               <select>
+                <option name="c">C</option>
+                <option name="java">Java</option>
+               </select>
+            </td>
+        </tr>
+        <tr><td>Upload an image</td><td><input type="file" name="photo"></td></tr>
+        <tr><td>Address </td><td><textarea rows="10" cols="10"></textarea></td></tr>
+        <tr><td></td><td><input type="button" value="register" onclick="validate()"></td></tr>
+        <tr><td></td><td><input type="button" value="register" onclick="msg1()"></td></tr>
+        </table>
+    </form>
+</center>
+</body>
+</html>

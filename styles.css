@@ -1,0 +1,30 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    position: relative;
+    height: 100vh;
+    background-image: url('download.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 2em;
+}
